@@ -1,0 +1,80 @@
+.category-section {
+    &__content {
+        margin-top: 10px;
+        margin-bottom: 70px;
+        h2 {
+            font-family: Sen;
+            font-size: 36px;
+            font-weight: 700;
+            line-height: 48px;
+            letter-spacing: -2px;
+            text-align: center;
+            margin-bottom: 71px;
+        }
+
+        .category__cards {
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: center;
+            gap: 32px;
+
+            .category__card {
+                transition: .2s;
+                cursor: pointer;
+                width: 296px;
+                padding: 30px 32px;
+                border: 1px solid #D3D3D6;
+                border-radius: 3px;
+
+                div {
+                    width: 48px;
+                    height: 46.5px;
+                    display: flex;
+                    align-items: center;
+                    justify-content: center;
+                    margin-bottom: 16px;
+                    border-radius: 10px;
+                    img {
+                        width: 24px;
+                        height: 24px;
+                    }
+
+                }
+                h3 {
+                    font-family: Sen;
+                    font-size: 28px;
+                    font-weight: 700;
+                    line-height: 40px;
+                    letter-spacing: -1px;
+                    color: #232536;
+                    margin-bottom: 4px;
+                }
+
+                p {
+                    color: #6D6E76;
+                    font-size: 16px;
+                    font-weight: 400;
+                    line-height: 28px;
+
+                }
+                &:hover {
+                    background: #FFD050;
+                    border: 1px solid #FFD050;  
+                    div {
+                        background: #FBF6EA;
+                    }
+                }
+            }
+        }
+    }
+}
+
+@media (max-width: 420px) {
+    .category-section {
+        &__content {
+            h2 {
+                font-size: 32px;
+            }
+        }
+    }
+}

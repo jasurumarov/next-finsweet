@@ -1,0 +1,105 @@
+.hero-section {
+    margin-bottom: 64px;
+    margin-top: 81px;
+    height: 720px;
+    display: flex;
+    align-items: center;
+    position: relative;
+
+    img {
+        width: 100%;
+        position: absolute;
+        z-index: -1;
+        object-fit: cover;
+        user-select: none;
+    }
+
+    .container {
+        width: 100%;
+    }
+
+    &__content {
+        color: white;
+
+        h5 {
+            font-size: 16px;
+            font-weight: 600;
+            line-height: 20px;
+            letter-spacing: 3px;
+            text-transform: uppercase;
+            margin-bottom: 24px;
+
+            span {
+                font-weight: 900;
+            }
+        }
+
+        h1 {
+            max-width: 810px;
+            font-family: Sen;
+            font-size: 56px;
+            font-weight: 700;
+            line-height: 64px;
+            letter-spacing: -2px;
+            margin-bottom: 24px;
+        }
+
+        h4 {
+            font-size: 16px;
+            font-weight: 400;
+            line-height: 28px;
+            margin-bottom: 16px;
+
+            span {
+                color: #FFD050;
+            }
+        }
+
+        p {
+            font-size: 16px;
+            font-weight: 400;
+            line-height: 28px;
+            color: #FFFFFF;
+            max-width: 600px;
+            margin-bottom: 48px;
+
+        }
+
+        button {
+            background: #FFD050;
+            padding: 16px 48px 16px 48px;
+            border-radius: 4px;
+            gap: 12px;
+            color: #232536;
+            font-family: Sen;
+            font-size: 18px;
+            font-weight: 700;
+            line-height: 24px;
+            transition: .2s;
+            &:active {
+                scale: .98;
+            }
+        }
+    }
+}
+
+@media (max-width: 486px) {
+    .hero-section {
+        &__content {
+            h5 {
+                font-size: 14px;
+            }
+            h1 {
+                font-size: 38px;
+                line-height: 48px;
+            }
+            h4, p {
+                font-size: 14px;
+            }
+            button {
+                font-size: 15px;
+                padding: 14px 46px 14px 46px;
+            }
+        }
+    }
+}
