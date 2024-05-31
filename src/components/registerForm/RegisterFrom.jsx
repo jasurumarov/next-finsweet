@@ -4,6 +4,8 @@ const RegisterFrom = () => {
   return (
     <section className='register-section'>
         <div className="container">
+            <div className="cl">
+
             <form>
                 <h2>Account</h2>
                 <input type="text" placeholder='First name'/>
@@ -13,6 +15,7 @@ const RegisterFrom = () => {
                 <input type="password" placeholder='Confirm password'/>
                 <button>Save</button>
             </form>
+            </div>
         </div>
     </section>
   )
